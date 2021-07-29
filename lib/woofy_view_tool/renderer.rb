@@ -1,0 +1,8 @@
+# frozen_string_literal: true
+module WoofyViewTool
+  class Renderer
+    def self.copyright(name, message)
+      "&copy; #{Time.now.year} | <b> #{name}</b> #{message}".html_safe
+    end
+  end
+end
